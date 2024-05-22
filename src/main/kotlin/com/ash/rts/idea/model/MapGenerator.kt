@@ -20,7 +20,22 @@ object MapGenerator {
         return RtsMap(voxels)
     }
 
+    fun generateMapRange(
+        xRange: IntRange = (0..10000),
+        yRange: IntRange = (0..10000),
+        zRange: IntRange = (-5..10)
+    ) = RtsMapRanges(xRange, yRange, zRange)
 
 }
 
 data class RtsMap(val voxels: Collection<Voxel>)
+
+data class RtsMapRanges(
+    val xRange: IntRange = (0..10000),
+    val yRange: IntRange = (0..10000),
+    val zRange: IntRange = (-5..10)
+) {
+    operator fun contains(voxel: Voxel): Boolean {
+        return voxel.x in xRange && voxel.y in yRange && voxel.z in zRange
+    }
+}
