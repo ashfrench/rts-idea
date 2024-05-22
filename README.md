@@ -1,1 +1,3 @@
 # rts-idea
+
+`./gradlew build`

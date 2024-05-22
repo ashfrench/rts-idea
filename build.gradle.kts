@@ -2,8 +2,8 @@ plugins {
     kotlin("jvm") version "1.9.23"
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "com.ash.rts.idea"
+version = "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
