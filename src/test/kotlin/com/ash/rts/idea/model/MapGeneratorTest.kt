@@ -54,7 +54,7 @@ class MapGeneratorTest {
 
         val rtsMap = MapGenerator.generateMapRange()
         return voxels.map { voxel ->
-            DynamicTest.dynamicTest("$voxel is in Default Map") {
+            DynamicTest.dynamicTest("$voxel is not in Default Map") {
                 assertFalse ("$voxel in map") { voxel in rtsMap }
             }
         }
