@@ -1,9 +1,6 @@
 package com.ash.rts.ideal.com.ash.rts.idea.model
 
-import com.ash.rts.idea.model.Attack
-import com.ash.rts.idea.model.Defense
-import com.ash.rts.idea.model.HitBox
-import com.ash.rts.idea.model.Movement
+import com.ash.rts.idea.model.*
 
 interface RtsUnit: Movement, Attack, Defense {
     override val hitBox: HitBox
@@ -11,5 +8,9 @@ interface RtsUnit: Movement, Attack, Defense {
     fun canMerge(rtsUnit: RtsUnit): Boolean
     fun merge(rtsUnit: RtsUnit): RtsUnit
     fun unmerge(): Collection<RtsUnit>
-    fun mergedUnits(): Collection<RtsUnit>
+}
+
+interface RtsMergedUnit: RtsUnit, MergedAttack, MergedDefense {
+    override fun mergedUnits(): Collection<RtsUnit>
+
 }
