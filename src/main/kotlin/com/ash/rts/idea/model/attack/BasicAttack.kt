@@ -1,4 +1,4 @@
-package com.ash.rts.ideal.com.ash.rts.idea.model.attack
+package com.ash.rts.idea.model.attack
 
 import com.ash.rts.idea.model.Attack
 import com.ash.rts.idea.model.HitBox
