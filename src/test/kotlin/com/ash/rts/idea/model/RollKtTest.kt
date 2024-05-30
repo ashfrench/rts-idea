@@ -3,9 +3,7 @@ package com.ash.rts.idea.model
 import com.ash.rts.ideal.com.ash.rts.idea.model.rollD12
 import com.ash.rts.ideal.com.ash.rts.idea.model.rollD20
 import com.ash.rts.ideal.com.ash.rts.idea.model.rollD6
-import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.RepeatedTest
 
 class RollKtTest {
